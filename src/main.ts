@@ -1,8 +1,11 @@
-import { name, age, isValid } from "./bases/01-types";
+// import { name, age, isValid } from "./bases/01-types";
 import { setupCounter } from "./counter";
 import typescriptLogo from "./typescript.svg";
 
 import "./style.css";
+import { charmander } from "./bases/04-injection";
+// import { charmander } from "./bases/03-classes";
+// import { pokemonIds } from "./bases/02-objects";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
@@ -17,7 +20,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-      ${name} - ${age} - ${isValid} Click on the Vite and TypeScript logos to learn more
+      ${charmander.name} Click on the Vite and TypeScript logos to learn more
     </p>
   </div>
 `;
